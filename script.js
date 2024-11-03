@@ -1,13 +1,12 @@
-// Получаем объект WebApp
+// Инициализируем объект WebApp
 const tg = window.Telegram.WebApp;
 
+// Добавляем обработчик клика на кнопку
 document.getElementById('start-button').addEventListener('click', () => {
-  // Здесь вы можете добавить логику вашего приложения
-  tg.MainButton.setText("Продолжить");
+  tg.MainButton.setText("Let's go!");
   tg.MainButton.show();
-});
-
-document.getElementById('start-button').addEventListener('click', () => {
-  const data = { action: 'start_learning' };
-  window.Telegram.WebApp.sendData(JSON.stringify(data));
+  tg.MainButton.onClick(() => {
+    tg.sendData("Start learning"); // Отправляем данные боту
+    tg.MainButton.hide(); // Скрываем кнопку после отправки данных
+  });
 });
