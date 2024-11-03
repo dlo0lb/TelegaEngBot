@@ -46,13 +46,17 @@
             cursor: pointer;
             text-decoration: none;
         }
-        /* Главный блок */
+        /* Главный блок с фоновым изображением */
         .hero {
             text-align: center;
-            padding: 60px 0;
-            background: url('your-image-url.jpg') no-repeat center;
+            padding: 80px 20px;
+            background: url('your-image-url.jpg') no-repeat center center;
             background-size: cover;
             color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         .hero h2 {
             font-size: 36px;
@@ -70,12 +74,12 @@
         /* Курсы */
         .courses {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
             gap: 20px;
             padding: 40px 0;
         }
         .course-card {
-            flex: 1;
+            flex: 1 1 300px;
             padding: 20px;
             background-color: #fff;
             border-radius: 8px;
@@ -104,6 +108,30 @@
             color: #333;
             text-decoration: none;
             margin: 0 10px;
+        }
+        
+        /* Адаптивные стили */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero h2 {
+                font-size: 28px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .courses {
+                flex-direction: column;
+            }
+            .container {
+                width: 95%;
+            }
         }
     </style>
 </head>
