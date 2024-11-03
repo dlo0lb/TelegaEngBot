@@ -1,16 +1,176 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>English Learning App</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English</title>
+    <style>
+        /* Основные стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* Шапка */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+        }
+        .button {
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        /* Главный блок */
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            background: url('your-image-url.jpg') no-repeat center;
+            background-size: cover;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        /* О Нас */
+        .about {
+            padding: 40px 0;
+            text-align: center;
+        }
+        /* Курсы */
+        .courses {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 40px 0;
+        }
+        .course-card {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        /* Отзывы */
+        .testimonials {
+            padding: 40px 0;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+        .testimonial {
+            max-width: 300px;
+            margin: 0 auto 20px;
+            font-size: 14px;
+        }
+        /* Футер */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
-  <div id="app">
-    <h1>Добро пожаловать в приложение для изучения английского!</h1>
-    <button id="start-button">Начать обучение</button>
-  </div>
-  <script src="script.js"></script>
+
+    <!-- Шапка -->
+    <header class="container">
+        <h1>Learn English</h1>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">Курсы</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <a href="#" class="button">Вход</a>
+    </header>
+
+    <!-- Главный блок -->
+    <section class="hero">
+        <h2>Начните изучать английский язык с удовольствием!</h2>
+        <p>Интерактивные курсы для всех уровней — от начинающего до продвинутого.</p>
+        <a href="#" class="button">Начать бесплатно</a>
+    </section>
+
+    <!-- О Нас -->
+    <section class="about container">
+        <h2>О нас</h2>
+        <p>Мы предлагаем уникальные методики и интерактивные материалы для изучения английского языка.</p>
+    </section>
+
+    <!-- Курсы -->
+    <section class="courses container">
+        <div class="course-card">
+            <h3>Начальный уровень</h3>
+            <p>Идеально для тех, кто только начинает изучать язык.</p>
+            <a href="#" class="button">Подробнее</a>
+        </div>
+        <div class="course-card">
+            <h3>Средний уровень</h3>
+            <p>Для тех, кто уже имеет базовые знания.</p>
+            <a href="#" class="button">Подробнее</a>
+        </div>
+        <div class="course-card">
+            <h3>Продвинутый уровень</h3>
+            <p>Углубленное обучение для уверенных пользователей.</p>
+            <a href="#" class="button">Подробнее</a>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="testimonials container">
+        <h2>Отзывы пользователей</h2>
+        <div class="testimonial">
+            <p>“Отличный сайт для изучения английского! Очень понравилась методика.” — Анна</p>
+        </div>
+        <div class="testimonial">
+            <p>“Я с удовольствием прохожу курсы. Уже вижу прогресс!” — Иван</p>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p>Контакты | Политика конфиденциальности | FAQ</p>
+            <p>© 2024 Learn English. Все права защищены.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
