@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Уроки по английскому языку</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="lesson-list">
+      <h1 class="lesson-title">Выберите урок</h1>
+      <div class="lesson-item" onclick="goToLesson('new-words')">
+        <h2>Изучение новых слов</h2>
+        <p>Запоминайте новые слова и их значения.</p>
+      </div>
+      <div class="lesson-item" onclick="goToLesson('grammar')">
+        <h2>Учим грамматику</h2>
+        <p>Изучайте грамматические правила и примеры.</p>
+      </div>
+      <div class="lesson-item" onclick="goToLesson('idioms')">
+        <h2>Идиомы и фразовые глаголы</h2>
+        <p>Понимайте идиомы и учитесь использовать фразовые глаголы.</p>
+      </div>
+      <div class="lesson-item" onclick="goToLesson('ai-chat')">
+        <h2>Общение с AI</h2>
+        <p>Практикуйтесь в общении с искусственным интеллектом на английском языке.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
