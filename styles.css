@@ -1,4 +1,4 @@
-/* Общие стили */
+/* Общие стили для всех страниц */
 * {
   margin: 0;
   padding: 0;
@@ -7,49 +7,51 @@
 
 body {
   font-family: Arial, sans-serif;
+  color: #2c3e50;
+}
+
+/* Стили для главной страницы */
+body.index-page {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-  /* Это градиент с голубыми и розовыми оттенками */
-  color: #2c3e50;
 }
 
-/* Центрирование и стили для главной страницы */
-.container {
+.index-page .container {
   text-align: center;
   max-width: 600px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.8); /* Прозрачный белый фон для контента */
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.welcome-section {
+.index-page .welcome-section {
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.welcome-image {
+.index-page .welcome-image {
   width: 100px;
   height: 100px;
   margin-bottom: 20px;
   animation: bounce 1.5s infinite;
 }
 
-.welcome-text {
+.index-page .welcome-text {
   font-size: 2.2em;
   color: #2c3e50;
   margin-bottom: 10px;
 }
 
-.description {
+.index-page .description {
   font-size: 1.2em;
   color: #34495e;
   margin-bottom: 20px;
 }
 
-.start-button {
+.index-page .start-button {
   padding: 12px 24px;
   font-size: 1em;
   color: #ffffff;
@@ -60,9 +62,59 @@ body {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.start-button:hover {
+.index-page .start-button:hover {
   background-color: #2980b9;
   transform: scale(1.05);
+}
+
+/* Стили для страницы lessons */
+body.lessons-page {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.lessons-page .container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.lessons-page .lesson-list {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lessons-page .lesson-title {
+  font-size: 2em;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.lessons-page .lesson-item {
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  background-color: #f3f4f7;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.lessons-page .lesson-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lessons-page .lesson-item h2 {
+  font-size: 1.5em;
+  color: #3498db;
+}
+
+.lessons-page .lesson-item p {
+  font-size: 0.9em;
+  color: #7f8c8d;
 }
 
 /* Анимации */
