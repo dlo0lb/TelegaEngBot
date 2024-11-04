@@ -71,49 +71,54 @@ body.index-page {
 body.lessons-page {
   background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
 }
 
-.lessons-page .container {
+.container {
   max-width: 600px;
   width: 100%;
   text-align: center;
 }
 
-.lessons-page .lesson-list {
+.lesson-list {
   background: #ffffff;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.lessons-page .lesson-title {
+.lesson-title {
   font-size: 2em;
   color: #34495e;
   margin-bottom: 20px;
 }
 
-.lessons-page .lesson-item {
-  padding: 15px;
+.lesson-item {
+  padding: 20px;
   border-radius: 8px;
-  margin: 10px 0;
+  margin: 15px 0;
   background-color: #f3f4f7;
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.lessons-page .lesson-item:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.lesson-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.lessons-page .lesson-item h2 {
+.lesson-item h2 {
   font-size: 1.5em;
   color: #3498db;
+  margin-bottom: 5px;
 }
 
-.lessons-page .lesson-item p {
-  font-size: 0.9em;
+.lesson-item p {
+  font-size: 1em;
   color: #7f8c8d;
 }
 
