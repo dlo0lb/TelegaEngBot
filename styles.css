@@ -5,17 +5,25 @@
   box-sizing: border-box;
 }
 
-/* Стили для главной страницы */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  /* Это градиент с голубыми и розовыми оттенками */
+  color: #2c3e50;
 }
 
+/* Центрирование и стили для главной страницы */
 .container {
   text-align: center;
   max-width: 600px;
   padding: 20px;
-  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8); /* Прозрачный белый фон для контента */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .welcome-section {
@@ -30,7 +38,7 @@ body {
 }
 
 .welcome-text {
-  font-size: 2em;
+  font-size: 2.2em;
   color: #2c3e50;
   margin-bottom: 10px;
 }
@@ -42,18 +50,19 @@ body {
 }
 
 .start-button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 1em;
   color: #ffffff;
   background-color: #3498db;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .start-button:hover {
   background-color: #2980b9;
+  transform: scale(1.05);
 }
 
 /* Анимации */
@@ -65,51 +74,4 @@ body {
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
-}
-
-/* Стили для страницы уроков */
-.lessons-container {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-  color: #2c3e50;
-  min-height: 100vh;
-  padding: 20px;
-}
-
-.lesson-list {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.lesson-title {
-  font-size: 2em;
-  color: #34495e;
-  margin-bottom: 20px;
-}
-
-.lesson-item {
-  padding: 15px;
-  border-radius: 8px;
-  margin: 10px 0;
-  background-color: #f3f4f7;
-  transition: transform 0.2s, box-shadow 0.2s;
-  cursor: pointer;
-}
-
-.lesson-item:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.lesson-item h2 {
-  font-size: 1.5em;
-  color: #3498db;
-}
-
-.lesson-item p {
-  font-size: 0.9em;
-  color: #7f8c8d;
 }
