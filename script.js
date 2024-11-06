@@ -16,7 +16,7 @@ if (document.getElementById('start-button')) {
 }
 
 // Код для страницы уроков
-/*function goToLesson(lesson) {
+function goToLesson(lesson) {
   console.log(`Переход к уроку: ${lesson}`); // Лог для отладки
   if (lesson === 'new-words') {
     window.location.href = 'cards.html'; // Переход на страницу карточек
@@ -28,10 +28,10 @@ if (document.getElementById('start-button')) {
     alert('Переход к разделу "Общение с AI" (страница еще не реализована).');
   }
 }
-*/
+
 
 // Добавление обработчиков событий для элементов уроков (альтернативный способ)
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
   const newWordsItem = document.querySelector('.lesson-item[data-lesson="new-words"]');
   const grammarItem = document.querySelector('.lesson-item[data-lesson="grammar"]');
   
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     grammarItem.addEventListener('click', () => goToLesson('grammar'));
   }
 });
-
+*/
 
 // Код для работы с карточками
 let currentWordIndex = 0;
