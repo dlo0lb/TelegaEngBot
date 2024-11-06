@@ -32,8 +32,8 @@ function goToLesson(lesson) {
 
 // Добавление обработчиков событий для элементов уроков (альтернативный способ)
 document.addEventListener('DOMContentLoaded', () => {
-  const newWordsItem = document.querySelector('.lesson-item:nth-child(1)');
-  const grammarItem = document.querySelector('.lesson-item:nth-child(2)');
+  const newWordsItem = document.querySelector('.lesson-item[data-lesson="new-words"]');
+  const grammarItem = document.querySelector('.lesson-item[data-lesson="grammar"]');
   
   if (newWordsItem) {
     newWordsItem.addEventListener('click', () => goToLesson('new-words'));
@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     grammarItem.addEventListener('click', () => goToLesson('grammar'));
   }
 });
+
 
 // Код для работы с карточками
 let currentWordIndex = 0;
