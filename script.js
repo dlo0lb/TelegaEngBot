@@ -151,3 +151,7 @@ function toggleTable() {
     console.error("Таблица не найдена.");
   }
 }
+
+function goBackToLessons() {
+  window.location.href = 'lessons.html'; // Убедитесь, что путь к lessons.html корректен
+}
