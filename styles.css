@@ -193,6 +193,33 @@ body.cards-page {
   background-color: #2ecc71;
   color: white;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-back h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.card-back p {
+  margin: 5px 0;
+}
+
+#transcription {
+  font-size: 1.2em;
+  color: #d1e7dd;
+}
+
+#example {
+  font-size: 1em;
+  color: #f5f5f5;
+  margin-top: 10px;
 }
 
 @keyframes swing {
