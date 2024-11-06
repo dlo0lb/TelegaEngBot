@@ -21,7 +21,7 @@ body.index-page {
 
 .index-page .container {
   text-align: center;
-  max-width: 520px;
+  max-width: 480px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
@@ -78,7 +78,7 @@ body.lessons-page {
 }
 
 .lessons-page .container {
-  max-width: 600px;
+  max-width: 480px;
   width: 100%;
   text-align: center;
 }
