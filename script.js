@@ -96,6 +96,20 @@ function nextWord() {
   currentWordIndex = (currentWordIndex + 1) % words.length; // Зацикливаем список слов
   document.getElementById("card").classList.remove("flipped");
   updateCard();
+
+  function toggleTable() {
+  const table = document.getElementById("grammar-table");
+  table.classList.toggle("hidden");
+
+  // Изменение текста кнопки в зависимости от состояния таблицы
+  const button = document.querySelector(".show-table-button");
+  if (table.classList.contains("hidden")) {
+    button.textContent = "Показать таблицу образования времени";
+  } else {
+    button.textContent = "Скрыть таблицу образования времени";
+  }
+}
+
 }
 
 // Инициализация первой карточки
