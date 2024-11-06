@@ -292,3 +292,79 @@ body.cards-page {
   }
 }
 
+/* Общие стили для страницы грамматики */
+body.grammar-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+  padding: 20px;
+  color: #2c3e50;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.grammar-title {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.grammar-description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.show-table-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.show-table-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.grammar-table {
+  margin-top: 20px;
+  text-align: left;
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.grammar-table.hidden {
+  display: none;
+}
+
+.grammar-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grammar-table th,
+.grammar-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.grammar-table th {
+  background-color: #2ecc71;
+  color: white;
+}
