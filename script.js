@@ -99,19 +99,17 @@ function nextWord() {
 
   function toggleTable() {
   const table = document.getElementById("grammar-table");
-  table.classList.toggle("hidden");
+  if (table) {
+    table.classList.toggle("hidden");
 
-  // Изменение текста кнопки в зависимости от состояния таблицы
-  const button = document.querySelector(".show-table-button");
-  if (table.classList.contains("hidden")) {
-    button.textContent = "Показать таблицу образования времени";
+    // Изменение текста кнопки в зависимости от состояния таблицы
+    const button = document.querySelector(".show-table-button");
+    if (table.classList.contains("hidden")) {
+      button.textContent = "Показать таблицу образования времени";
+    } else {
+      button.textContent = "Скрыть таблицу образования времени";
+    }
   } else {
-    button.textContent = "Скрыть таблицу образования времени";
+    console.error("Таблица не найдена.");
   }
 }
-
-}
-
-// Инициализация первой карточки
-updateCard();
-
