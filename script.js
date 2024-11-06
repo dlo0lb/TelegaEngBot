@@ -17,9 +17,18 @@ if (document.getElementById('start-button')) {
 
 // Код для страницы уроков
 function goToLesson(lesson) {
-  // Здесь вы можете реализовать логику перехода к конкретным урокам
-  alert(`Переход к уроку: ${lesson}`);
+  if (lesson === 'new-words') {
+    // Переход на страницу карточек
+    window.location.href = 'cards.html';
+  } else if (lesson === 'grammar') {
+    alert('Переход к разделу "Грамматика" (страница еще не реализована).');
+  } else if (lesson === 'idioms') {
+    alert('Переход к разделу "Идиомы и фразовые глаголы" (страница еще не реализована).');
+  } else if (lesson === 'ai-chat') {
+    alert('Переход к разделу "Общение с AI" (страница еще не реализована).');
+  }
 }
+
 
 let currentWordIndex = 0;
 
