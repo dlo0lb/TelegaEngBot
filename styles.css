@@ -373,24 +373,29 @@ body.grammar-page {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 50px;
-  height: 50px;
+  width: 60px; /* Размер кнопки может быть изменен */
+  height: 60px; /* Размер кнопки может быть изменен */
   border-radius: 50%;
-  background-color: #3498db;
-  color: white;
+  background-color: transparent; /* Фон кнопки прозрачный */
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  padding: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s;
   animation: bounce 1.5s ease-in-out infinite; /* Постоянная анимация */
 }
 
 .bounce-button:hover {
-  background-color: #2980b9;
+  background-color: transparent; /* Опционально: измените поведение на hover */
+}
+
+.bounce-button .button-image {
+  width: 100%; /* Изображение будет занимать всю кнопку */
+  height: 100%;
+  object-fit: cover; /* Позволяет изображению масштабироваться по размеру кнопки */
+  border-radius: 50%;
 }
 
 @keyframes bounce {
@@ -398,7 +403,8 @@ body.grammar-page {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-15px); /* Измените значение для регулировки высоты прыжка */
+    transform: translateY(-15px); /* Высота прыжка */
   }
 }
+
 
