@@ -21,7 +21,8 @@ function goToLesson(lesson) {
     // Переход на страницу карточек
     window.location.href = 'cards.html';
   } else if (lesson === 'grammar') {
-    alert('Переход к разделу "Грамматика" (страница еще не реализована).');
+    // Переход на страницу грамматики
+    window.location.href = 'grammar.html';
   } else if (lesson === 'idioms') {
     alert('Переход к разделу "Идиомы и фразовые глаголы" (страница еще не реализована).');
   } else if (lesson === 'ai-chat') {
