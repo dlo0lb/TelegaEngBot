@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Учим грамматику</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="grammar-page">
+  <div class="container">
+    <h1 class="grammar-title">Прошедшее время в английском языке</h1>
+    <p class="grammar-description">
+      Прошедшее время (Past Simple) используется для описания действий, которые произошли в определенный момент в прошлом. 
+      Это время образуется добавлением окончания "-ed" к правильным глаголам, или использованием второй формы для неправильных глаголов.
+    </p>
+    <button class="show-table-button" onclick="toggleTable()">Показать таблицу образования времени</button>
+    
+    <div id="grammar-table" class="grammar-table hidden">
+      <h2>Таблица образования Past Simple</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Форма</th>
+            <th>Утверждение</th>
+            <th>Отрицание</th>
+            <th>Вопрос</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Простая форма</td>
+            <td>I worked</td>
+            <td>I did not work</td>
+            <td>Did I work?</td>
+          </tr>
+          <tr>
+            <td>Третье лицо</td>
+            <td>He worked</td>
+            <td>He did not work</td>
+            <td>Did he work?</td>
+          </tr>
+          <!-- Добавьте больше строк, если нужно -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
