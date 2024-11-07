@@ -21,7 +21,7 @@ body.index-page {
 
 .index-page .container {
   text-align: center;
-  max-width: 380px;
+  max-width: 360px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
@@ -304,7 +304,7 @@ body.grammar-page {
 }
 
 .grammar-page .container {
-  max-width: 600px;
+  max-width: 480px;
   text-align: center;
   background: #ffffff;
   padding: 20px;
@@ -384,7 +384,7 @@ body.grammar-page {
   justify-content: center;
   padding: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: bounce 0.5s ease-in-out infinite; /* Постоянная анимация */
+  animation: bounce 0.7s ease-in-out infinite; /* Постоянная анимация */
 }
 
 .bounce-button:hover {
@@ -406,7 +406,7 @@ body.grammar-page {
     transform: translateY(-15px) scale(1); /* Верхняя точка прыжка */
   }
   75% {
-    transform: translateY(0) scale(1.3, 0.8); /* Сжатие мяча по горизонтали и вертикали */
+    transform: translateY(0) scale(1.2, 0.9); /* Сжатие мяча по горизонтали и вертикали */
   }
 }
 
