@@ -345,10 +345,7 @@ body.grammar-page {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.grammar-table.hidden {
-  display: none;
+  max-width: 100%;
 }
 
 .grammar-table table {
@@ -360,12 +357,17 @@ body.grammar-page {
 .grammar-table td {
   padding: 10px;
   border: 1px solid #ddd;
-  text-align: center;
+  text-align: left; /* Выровняем текст по левому краю для лучшей читаемости */
 }
 
 .grammar-table th {
   background-color: #2ecc71;
   color: white;
+}
+
+.grammar-table td:first-child {
+  font-weight: bold;
+  width: 30%;
 }
 
 /* Кнопка возврата на страницу Lessons */
