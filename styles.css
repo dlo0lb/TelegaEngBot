@@ -384,7 +384,7 @@ body.grammar-page {
   justify-content: center;
   padding: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: bounce 1.5s ease-in-out infinite; /* Постоянная анимация */
+  animation: bounce 1s ease-in-out infinite; /* Постоянная анимация */
 }
 
 .bounce-button:hover {
