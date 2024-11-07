@@ -392,18 +392,21 @@ body.grammar-page {
 }
 
 .bounce-button .button-image {
-  width: 100%; /* Изображение будет занимать всю кнопку */
+  width: 100%;
   height: 100%;
-  object-fit: cover; /* Позволяет изображению масштабироваться по размеру кнопки */
+  object-fit: cover;
   border-radius: 50%;
 }
 
 @keyframes bounce {
   0%, 100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1); /* Начальное и конечное состояние */
   }
   50% {
-    transform: translateY(-15px); /* Высота прыжка */
+    transform: translateY(-15px) scale(1); /* Верхняя точка прыжка */
+  }
+  75% {
+    transform: translateY(0) scale(1.1, 0.9); /* Сжатие мяча по горизонтали и вертикали */
   }
 }
 
