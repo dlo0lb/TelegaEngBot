@@ -406,7 +406,7 @@ body.grammar-page {
     transform: translateY(-15px) scale(1); /* Верхняя точка прыжка */
   }
   75% {
-    transform: translateY(0) scale(1.5, 0.7); /* Сжатие мяча по горизонтали и вертикали */
+    transform: translateY(0) scale(1.3, 0.8); /* Сжатие мяча по горизонтали и вертикали */
   }
 }
 
