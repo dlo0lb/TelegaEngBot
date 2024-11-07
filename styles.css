@@ -384,7 +384,7 @@ body.grammar-page {
   justify-content: center;
   padding: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  animation: bounce 0.8s ease-in-out infinite; /* Постоянная анимация */
+  animation: bounce 0.5s ease-in-out infinite; /* Постоянная анимация */
 }
 
 .bounce-button:hover {
@@ -406,7 +406,7 @@ body.grammar-page {
     transform: translateY(-15px) scale(1); /* Верхняя точка прыжка */
   }
   75% {
-    transform: translateY(0) scale(1.1, 0.9); /* Сжатие мяча по горизонтали и вертикали */
+    transform: translateY(0) scale(1.5, 0.7); /* Сжатие мяча по горизонтали и вертикали */
   }
 }
 
